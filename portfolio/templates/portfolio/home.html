@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kulbhushan Nautiyal | Data Scientist Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .project-card {
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kulbhushan Nautiyal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects/">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/skills/">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+          <li class="nav-item"><a class="nav-link " href="{% static 'portfolio/resume.pdf' %}" download>Resume</a>cd</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hello, I'm Kulbhushan Nautiyal</h1>
+      <p class="lead">Data Scientist | NLP & LLM Engineer | Python Developer</p>
+      <a href="/projects/" class="btn btn-warning mt-3">Explore My Projects</a>
+    </div>
+  </section>
+
+  <!-- About Summary -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>
+        I'm a Data Scientist with a strong foundation in Physics, now specializing in NLP and Large Language Models (LLMs). I work with tools like Hugging Face, LangChain, and FAISS to build scalable applications for chatbots, RAG pipelines, and document intelligence.
+        I fine-tune transformer models and deploy them using FastAPI, Docker, and cloud platforms.
+        With a focus on real-world impact, I combine deep technical skills with a strong academic background to deliver intelligent AI solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Highlighted Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow project-card">
+            <div class="card-body">
+              <h5 class="card-title">📄 Legal Document Summarizer</h5>
+              <p class="card-text">Summarizes long legal texts using fine-tuned T5 and LangChain chains with custom pipelines.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow project-card">
+            <div class="card-body">
+              <h5 class="card-title">🧠 LLM SQL Agent</h5>
+              <p class="card-text">Built an AI agent for internal teams to query SQL databases using natural language via LLMs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow project-card">
+            <div class="card-body">
+              <h5 class="card-title">📈 Business Forecasting Model</h5>
+              <p class="card-text">Created predictive regression models to assist decision-making for business planning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Preview -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Skills Snapshot</h2>
+      <p>Python, Machine Learning, NLP, Scikit-learn, PyTorch, TensorFlow, Hugging Face, LangChain, FAISS, FastAPI, SQL, AWS, Docker, Git, Power BI, Excel, Statistical Analysis</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">📧 kbphys96@gmail.com | 📞 +91 9958496425</p>
+      <p class="mt-2">© 2025 Kulbhushan Nautiyal</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
